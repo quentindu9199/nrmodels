@@ -1,0 +1,212 @@
+*
+{
+    
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+header
+{
+    
+  width: 100%;  
+    background-color: #E9E9E9;
+}
+
+container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+#logo
+{
+    width: 11%;
+    padding: 10px 0px 0px 10px;
+    
+}
+
+h1
+{
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+#language
+{
+    width: 175px;
+    height: 30px;
+    margin: 40px 15px 0px 0px;
+    color: black;
+    background-color: orange;
+    border: solid grey 2px;
+    border-radius: 20px;
+    
+}
+
+#pres
+{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#presentation
+
+{
+    
+    width: 50%;
+    margin-top: 20px;
+
+}
+
+#produits
+{
+    
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+}
+
+#p1
+{
+    
+    width: 60%;
+    display: flex;
+    align-items: center;
+     
+}
+
+#navire
+{
+    
+    
+    border: solid orange 2px;
+    border-radius: 50px;
+    
+}
+
+hr
+{
+    
+    margin-top: 20px;
+    height: 2px;
+    background-color: orange;
+    border: none;
+    
+}
+
+#txt
+{
+    
+    margin-left: 20%;
+    
+    border-style: solid solid none none;
+    border-color: orange;
+    padding: 5px;
+    text-align: end;
+    
+}
+
+#p2
+{
+    
+    width: 60%;
+    display: flex;
+    align-items: center;
+    
+     
+}
+
+#txt2
+{
+    
+    margin-right: 20%;
+    border-style: solid none none solid;
+    padding: 5px;
+    border-color: orange;
+}
+
+#prix
+{
+    
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 102px;
+    
+}
+
+dd
+{
+    
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    
+}
+
+#reservation
+{
+    
+    
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    color: black;
+    background-color: orange;
+    border: solid grey 2px;
+    
+}
+
+#smart-button-container
+
+{
+    
+   
+    width: 50%;
+    margin-left: 10px;
+    
+}
+
+#prix2
+{
+    
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 102px;
+    
+}
+
+
+footer
+{
+    
+    width: 100%;
+    background-color: orange;
+    margin-top: 25px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+h2
+{
+    
+    font-size: 35px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
