@@ -1,0 +1,87 @@
+*
+{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+#bloc
+{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    /*background-color: black;*/
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#pt1, #pt2
+{
+    
+    width: 35%;
+    height: 400px;
+    margin: auto;
+
+    
+}
+
+#pt1
+{
+    
+    /*background-color: blue;*/
+    
+}
+
+#pt2
+{
+    
+    /*background-color: deepskyblue;*/
+    
+}
+
+
+#photo, #texte
+{
+    
+    width: 90%;
+    
+}
+
+
+#photo
+{
+    
+    height: 300px;
+    /*background-color: green;*/
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+#texte
+{
+    
+     border-style: solid;
+    border-color: orange;
+    border-radius: 20px;
+    /*background-color: red;*/
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    
+    
+}
+
+#navire
+{
+    
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    border: solid orange 3px;
+    border-radius: 50px;
+    
+}

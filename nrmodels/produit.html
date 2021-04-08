@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="CSS/produit.css">
+</head>
+<body>
+
+    <main>
+    
+        <section id="bloc">
+                <article id="pt1">
+                    
+                    <article id="photo">
+                    
+                    <img id="navire" src="Images/space.jpg" alt="Photo du vaisseau MPC Space Eagle Transporter et booster 1999">
+                    
+                    </article>
+                    
+                    <article id="texte">
+                    
+                    <h3>
+                    Base : MPC space eagle 1999 version Deluxe    
+                    </h3>
+                        
+                    <p>399€</p>
+                    
+                    </article>
+                </article>
+        
+        
+        
+<article id="pt2">
+                    
+                    <article id="photo">
+                    
+                    <img id="navire" src="Images/navire.jpg" alt="Photo temporaire de navire">
+                    
+                    </article>
+                    
+                    <article id="texte">
+                    
+                    <h3> Texte de remplissage, pour expliquer la photo</h3>
+                    <p>399€</p>
+                    </article>
+        
+        
+        
+        
+        
+                </article>
+        </section>
+        
+    </main>
+    
+</body>  
+    
+
+
+
+</html>
+
+<!--   </article>
+        </section>
+        <container id="produits">
+            <article id="p1">
+            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
+                <article id="txt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
+                    <dl><dd></dd><dt id="prix">35€</dt></dl>
+                </article>                
+            </article>
+        </container>
+        <container id="produits">
+            <article id="p2">
+                <article id="txt2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
+                    <dl><dt id="prix2">35€</dt>
+                    <dd>
+   </dd></dl>
+                    
+                </article>
+                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">   
+            </article>
+        </container>
+        <container id="produits">
+            <article id="p1">
+            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
+              <article id="txt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
+                    <dl><dd></dd><dt id="prix">35€</dt></dl>
+                </article>   
+            </article>
+        </container>
+         <container id="produits">
+            <article id="p2">
+                <article id="txt2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
+                    <dl><dt id="prix2">35€</dt>
+                    <dd><div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script></dd></dl>
+                    
+                </article>
+                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">  
+            </article>
+        </container> 
+         <container id="produits">
+            <article id="p1">
+            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
+            
+                <article id="txt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
+                        
+                    <dl><dd></dd><dt id="prix">35€</dt></dl>
+        
+                </article> 
+            </article>
+        </container>
+        
+        <container id="produits">
+            <article id="p2">
+            
+                <article id="txt2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
+                        
+                    <dl><dt id="prix2">35€</dt>
+                    <dd><div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script></dd></dl>  
+                </article>
+                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">  
+            </article>
+        </container>
+        <container id="produits">
+            <article id="p1">
+            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
+                <article id="txt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
+                    <dl><dd></dd><dt id="prix">35€</dt></dl>
+                </article>                
+            </article>
+        </container>
+        <container id="produits">
+            <article id="p2">
+                <article id="txt2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
+                    <dl><dt id="prix2">35€</dt>
+                    <dd><div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script></dd></dl>
+                    
+                </article>
+                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">   
+            </article>
+        </container>
+        <container id="produits">
+            <article id="p1">
+            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
+              <article id="txt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
+                    <dl><dd></dd><dt id="prix">35€</dt></dl>
+                </article>   
+            </article>
+        </container>
+         <container id="produits">
+            <article id="p2">
+                <article id="txt2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
+                    <dl><dt id="prix2">35€</dt>
+                    <dd><div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'horizontal',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script></dd></dl>
+                    
+                </article>
+                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">  
+            </article>
+        </container> 
+-->

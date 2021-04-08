@@ -21,25 +21,21 @@
     <main>
         <container id="pres">
         <article id="presentation">
-            <h2>Bienvenue sur NRMODELS, artisan spécialisé en vente de <strong>modelisme</strong> et de <strong>maquette bateau.</strong> </h2> <p>Je vous propose à la vente différents services:</p>
+            <h2>Bienvenue sur NRMODELS, artisan spécialisé en vente de <strong>modelisme</strong> et de <strong>maquette bateau.</strong> </h2> 
+            
+            <p id="service">Je vous propose à la vente différents services:</p>
+            
             <ul>
-                <li><strong>Construction maquette</strong>: Je produits mes propres maquettes imprimées. Elles sont disponibles déjà montées, ou à monter soi-même.</li>
-                <li><strong>Montage maquette</strong>: Je vous propose de monter les maquettes déjà disponibles sur mon site, et de vous les livrer directement chez vous. Les maquettes seront emballées soigneusement, de façon à ne pas être abimées pendant le transport, et seront accompagnées d'un suivi de colis.</li>
-            
-            
-            
-            
-            
-            
+                <li><dl><strong><dt>Construction maquette</dt></strong><dd>Je produits mes propres maquettes imprimées. Elles sont disponibles déjà montées, ou à monter soi-même.</dd></dl></li>
+                <li><dl><strong><dt>Montage maquette</dt></strong><dd>Je vous propose de monter les maquettes déjà disponibles sur mon site, et de vous les livrer directement chez vous. Les maquettes seront emballées soigneusement, de façon à ne pas être abimées pendant le transport, et seront accompagnées d'un suivi de colis.</dd></dl></li>
             </ul><hr>
         </article>
         </container>
         
-        <container id="produits">
-            <article id="p1">
-            <img id="navire" alt="Photo de produit du navire space eagle 1999" src="Images/space.jpg">
-            
-                <article id="txt">
+        
+        
+        <!--
+<article id="txt">
                     <h3>Base : MPC space eagle 1999 version Deluxe
                     </h3>
                     <br>
@@ -50,136 +46,26 @@ Kit Eclairage : Non-communiqué
                         <br>
                         Cosmos 1999 (Space: 1999) est une série télévisée de science-fiction britannique mettant en scène le mythique<br> <strong>space eagle 1999</strong>
                     <br>
-                    </p>
-                        
-                    <dl><dd>Produit Unique</dd><dt id="prix">35€</dt></dl>
+-->
         
-                </article> 
-            </article>
-        </container>
         
-        <container id="produits">
-            <article id="p2">
-            
-                <article id="txt2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
-                        
-                    <dl><dt id="prix2">35€</dt>
-                    <dd><div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script></dd></dl>  
-                </article>
-                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">  
-            </article>
-        </container>
-        <container id="produits">
-            <article id="p1">
-            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
-                <article id="txt">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
-                    <dl><dd></dd><dt id="prix">35€</dt></dl>
-                </article>                
-            </article>
-        </container>
-        <container id="produits">
-            <article id="p2">
-                <article id="txt2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
-                    <dl><dt id="prix2">35€</dt>
-                    <dd><div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script></dd></dl>
+        <section id="bloc">
+                <article id="pt1">
                     
-                </article>
-                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">   
-            </article>
-        </container>
-        <container id="produits">
-            <article id="p1">
-            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
-              <article id="txt">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
-                    <dl><dd></dd><dt id="prix">35€</dt></dl>
-                </article>   
-            </article>
-        </container>
-         <container id="produits">
-            <article id="p2">
-                <article id="txt2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
-                    <dl><dt id="prix2">35€</dt>
-                    <dd><div id="smart-button-container">
+                    <article id="photo">
+                    
+                    <img id="navire" src="Images/space.jpg" alt="Photo du vaisseau MPC Space Eagle Transporter et booster 1999">
+                    
+                    </article>
+                    
+                    <article id="texte">
+                    
+                    <h3>
+                    Base : MPC space eagle 1999 version Deluxe    
+                    </h3>
+                        
+                    <p>399€</p>
+                         <div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
       </div>
@@ -214,189 +100,70 @@ Kit Eclairage : Non-communiqué
       }).render('#paypal-button-container');
     }
     initPayPalButton();
-  </script></dd></dl>
+  </script>
                     
+                    </article>
                 </article>
-                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">  
-            </article>
-        </container> 
-         <container id="produits">
-            <article id="p1">
-            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
-            
-                <article id="txt">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
-                        
-                    <dl><dd></dd><dt id="prix">35€</dt></dl>
         
-                </article> 
-            </article>
-        </container>
         
-        <container id="produits">
-            <article id="p2">
-            
-                <article id="txt2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
+        
+<article id="pt2">
+                    
+                    <article id="photo">
+                    
+                    <img id="navire" src="Images/navire.jpg" alt="Photo temporaire de navire">
+                    
+                    </article>
+                    
+                    <article id="texte">
+                    
+                    <h3> Texte de remplissage, pour expliquer la photo</h3>
+                    <p>399€</p>
                         
-                    <dl><dt id="prix2">35€</dt>
-                    <dd><div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script></dd></dl>  
-                </article>
-                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">  
-            </article>
-        </container>
-        <container id="produits">
-            <article id="p1">
-            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
-                <article id="txt">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
-                    <dl><dd></dd><dt id="prix">35€</dt></dl>
-                </article>                
-            </article>
-        </container>
-        <container id="produits">
-            <article id="p2">
-                <article id="txt2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
-                    <dl><dt id="prix2">35€</dt>
-                    <dd><div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script></dd></dl>
+                    </article>
+         </article>
+        </section>
+        <hr>
+        
+        
+         <section id="bloc">
+                <article id="pt1">
                     
-                </article>
-                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">   
-            </article>
-        </container>
-        <container id="produits">
-            <article id="p1">
-            <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">
-              <article id="txt">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p> 
-                    <dl><dd></dd><dt id="prix">35€</dt></dl>
-                </article>   
-            </article>
-        </container>
-         <container id="produits">
-            <article id="p2">
-                <article id="txt2">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet posuere lorem, in vehicula dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut velit sit amet dolor semper consectetur. Praesent scelerisque vitae libero ut hendrerit. Praesent ut feugiat ipsum, in convallis dolor. Etiam hendrerit et mauris at eleifend. Cras faucibus ac tellus in finibus. Aliquam tristique condimentum placerat.</p>
-                    <dl><dt id="prix2">35€</dt>
-                    <dd><div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'paypal',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script></dd></dl>
+                    <article id="photo">
                     
+                    <img id="navire" src="Images/space.jpg" alt="Photo du vaisseau MPC Space Eagle Transporter et booster 1999">
+                    
+                    </article>
+                    
+                    <article id="texte">
+                    
+                    <h3>
+                    Base : MPC space eagle 1999 version Deluxe    
+                    </h3>
+                        
+                    <p>399€</p>                    
+                    </article>
                 </article>
-                <img id="navire" alt="Photo de produit du navire XXXX" src="Images/navire.jpg">  
-            </article>
-        </container> 
-    </main>
+        
+        
+        
+<article id="pt2">
+                    
+                    <article id="photo">
+                    
+                    <img id="navire" src="Images/navire.jpg" alt="Photo temporaire de navire">
+                    
+                    </article>
+                    
+                    <article id="texte">
+                    
+                    <h3> Texte de remplissage, pour expliquer la photo</h3>
+                    <p>399€</p>
+                        
+                    </article>
+         </article>
+        </section>           
+    </main> 
     <footer>
         Copyright NRMODELS© - 2021 - Tous droits réservés.
     </footer>
