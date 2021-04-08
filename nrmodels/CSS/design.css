@@ -90,8 +90,8 @@ h1
 #navire
 {
     
-    
-    border: solid orange 2px;
+    width: 400px;
+    border: solid orange 3px;
     border-radius: 50px;
     
 }
@@ -141,10 +141,9 @@ hr
 #prix
 {
     
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 30px;
-    text-align: right;
-    margin-right: 102px;
+    text-align: center;
     
 }
 
@@ -154,6 +153,13 @@ dd
     text-align: center;
     margin-top: 20px;
     font-size: 25px;
+    
+}
+
+dt
+{
+    
+    font-family: 'PT Sans', sans-serif;
     
 }
 
@@ -209,5 +215,20 @@ h2
     
     font-size: 35px;
     font-family: 'PT Sans', sans-serif;
+    
+}
+
+h3
+{
+    
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+#description
+{
+    
+    font-size: 18px;
     
 }
