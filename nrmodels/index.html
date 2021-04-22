@@ -3,6 +3,8 @@
 <head>
     <title>NRMODELS</title>
     <meta name="author" content="Prénom NOM ou Nom de l'entreprise">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
     <link rel="stylesheet" href="CSS/design.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,11 +19,34 @@
    <img id="logo" src="Images/logo.png" alt="Logo NRMODELS"> <h1>NRMODELS</h1>
     <a href="en.html"><button id="language">Click to English Website</button></a>
         </container>
+        <!-- MENU TEMPORAIRE
+
+        <nav>
+            <ul id="navigation">
+                <li>Bateaux et navires</li>
+                <li>Trains</li>
+                <li>Avion et hélico</li>
+                <li>Pièces et accessoires</li>
+            </ul>
+        </nav>
+    -->
+
     </header>
     <main>
         <container id="pres">
         <article id="presentation">
-            <h2>Bienvenue sur NRMODELS, artisan spécialisé en vente de <strong>modelisme</strong> et de <strong>maquette bateau.</strong> </h2> 
+            <h2>Bienvenue sur NRMODELS, artisan 
+                spécialisé en vente de <strong>modelisme</strong> et de <strong>maquette bateau.</strong> </h2> 
+            
+            <p id="h2">
+            
+            <!-- Vérifier le référencement -->
+                
+                Conception et réalisation de pièces détachées<br> pour modèle réduit 
+                
+                <!-- Vérifier le référencement -->
+            
+            </p>
             
             <p id="service">Je vous propose à la vente différents services:</p>
             
@@ -65,12 +90,41 @@ Kit Eclairage : Non-communiqué
                     </h3>
                         
                     <p>399€</p>
-                         <div id="smart-button-container">
+                        
+                        <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"> // Replace YOUR_CLIENT_ID with your sandbox client ID
+    </script>
+
+    <div id="paypal-button-container"></div>
+
+    <!-- Add the checkout buttons, set up the order and approve the order -->
+    <script>
+      paypal.Buttons({
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '0.01'
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name);
+          });
+        }
+      }).render('#paypal-button-container'); // Display payment options on your web page
+    </script>
+                        
+                        
+                         <!-- Bouton PP
+
+<div id="smart-button-container">
       <div style="text-align: center;">
         <div id="paypal-button-container"></div>
       </div>
     </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
   <script>
     function initPayPalButton() {
       paypal.Buttons({
@@ -78,13 +132,13 @@ Kit Eclairage : Non-communiqué
           shape: 'pill',
           color: 'gold',
           layout: 'horizontal',
-          label: 'paypal',
+          label: 'buynow',
           
         },
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"EUR","value":35}}]
+            purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
           });
         },
 
@@ -100,7 +154,7 @@ Kit Eclairage : Non-communiqué
       }).render('#paypal-button-container');
     }
     initPayPalButton();
-  </script>
+  </script> -->
                     
                     </article>
                 </article>
