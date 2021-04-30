@@ -11,48 +11,49 @@
     <link rel="icon" href="Images/logo.png">
 </head>
 <body>
-    <script>
-    
-    </script>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J707X8QBVN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J707X8QBVN');
+</script>
     <header>
        <container> 
-   <img id="logo" src="Images/logo.png" alt="Logo NRMODELS"> <h1>NRMODELS</h1>
+           <!-- Mettre un lien sur le logo vers l'index.html
+            -->
+           <img id="logo" src="Images/logo.png" alt="Logo NRMODELS"> <h1>NRMODELS</h1>
     <a href="en.html"><button id="language">Click to English Website</button></a>
         </container>
-        <!-- MENU TEMPORAIRE
-
         <nav>
             <ul id="navigation">
-                <li>Bateaux et navires</li>
-                <li>Trains</li>
-                <li>Avion et hélico</li>
-                <li>Pièces et accessoires</li>
+                <li><a href="index.html">Maquettes</a></li>
+                <li><a href="accessoires.html">Accessoires</a></li>
+                
             </ul>
         </nav>
-    -->
-
     </header>
     <main>
         <container id="pres">
+            
         <article id="presentation">
-            <h2>Bienvenue sur NRMODELS, artisan 
-                spécialisé en vente de <strong>modelisme</strong> et de <strong>maquette bateau.</strong> </h2> 
+            <h2>Bienvenue sur NRMODELS, artisan spécialisé
             
-            <p id="h2">
+                <p id="h2">
             
-            <!-- Vérifier le référencement -->
-                
-                Conception et réalisation de pièces détachées<br> pour modèle réduit 
-                
-                <!-- Vérifier le référencement -->
+                en montage, réalisation et conception de <strong>modèle réduit </strong></p></h2>
             
-            </p>
+          
             
-            <p id="service">Je vous propose à la vente différents services:</p>
+            <p id="service">Je vous propose à la vente différents services:</p><br>
             
             <ul>
-                <li><dl><strong><dt>Construction maquette</dt></strong><dd>Je produits mes propres maquettes imprimées. Elles sont disponibles déjà montées, ou à monter soi-même.</dd></dl></li>
-                <li><dl><strong><dt>Montage maquette</dt></strong><dd>Je vous propose de monter les maquettes déjà disponibles sur mon site, et de vous les livrer directement chez vous. Les maquettes seront emballées soigneusement, de façon à ne pas être abimées pendant le transport, et seront accompagnées d'un suivi de colis.</dd></dl></li>
+                <li><h3><strong id="services">Maquettes:</strong> Suivez mes réalisations en cours et projet à venir.</h3></li>
+                <br>
+                <li><h3><strong id="services">Accessoires</strong>: Les produits utlisés et recommandé par mes soins, actualisés chaque mois.</h3>
+                </li>
             </ul><hr>
         </article>
         </container>
@@ -79,15 +80,16 @@ Kit Eclairage : Non-communiqué
                     
                     <article id="photo">
                     
-                    <img id="navire" src="Images/space.jpg" alt="Photo du vaisseau MPC Space Eagle Transporter et booster 1999">
+                    <a href="https://photos.app.goo.gl/ZwQnzosYg1p8g29aA" target="_blank"><img id="navire" src="Images/space.jpg" alt="Photo du vaisseau MPC Space Eagle Transporter et booster 1999">
+                        </a>
                     
                     </article>
                     
                     <article id="texte">
                     
-                    <h3>
+                    <h4>
                     Base : MPC space eagle 1999 version Deluxe    
-                    </h3>
+                    </h4>
                         
                     <p>399€</p>
                         
@@ -115,47 +117,6 @@ Kit Eclairage : Non-communiqué
         }
       }).render('#paypal-button-container'); // Display payment options on your web page
     </script>
-                        
-                        
-                         <!-- Bouton PP
-
-<div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'buynow',
-          
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script> -->
-                    
                     </article>
                 </article>
         
@@ -171,12 +132,12 @@ Kit Eclairage : Non-communiqué
                     
                     <article id="texte">
                     
-                    <h3> Texte de remplissage, pour expliquer la photo</h3>
+                    <h4> Texte de remplissage, pour expliquer la photo</h4>
                     <p>399€</p>
                         
                     </article>
          </article>
-        </section>
+        </section><!-- SUPRESSION TEMPORAIRE
         <hr>
         
         
@@ -216,7 +177,7 @@ Kit Eclairage : Non-communiqué
                         
                     </article>
          </article>
-        </section>           
+        </section>   -->        
     </main> 
     <footer>
         Copyright NRMODELS© - 2021 - Tous droits réservés.
