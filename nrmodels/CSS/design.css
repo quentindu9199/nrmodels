@@ -122,7 +122,7 @@ hr
     
 }
 */
-footer, #foot
+footer, #foot, #foot2
 {
     
     width: 100%;
@@ -160,7 +160,7 @@ h3
     
 }
 
-#bloc, #sec
+#bloc, #sec, #abteilung_section
 {
     display: flex;
     width: 80%;
@@ -214,7 +214,7 @@ h3
     
 }
 
-#navire, #ammo, #AK, #tamiya, #abteilung
+#navire, #ammo, #AK, #tamiya, #abteilung, #ammo2, #AK2, #Green_stuff
 {
     
     width: 100%;
@@ -295,7 +295,7 @@ dd
     
 }
 
-#ammo, #AK, #tamiya, #abteilung
+#ammo, #AK, #tamiya, #abteilung, #Green_stuff
 {
     width: 75% !important;
     height: 75% !important;
@@ -346,5 +346,44 @@ nav ul li a:hover
 {
     
     text-decoration: underline orange 3px;
+    
+}
+
+#foot2
+{
+    
+    position: relative;
+    bottom: auto;
+    
+}
+
+#abteilung_section
+{
+    
+    height: 400px;
+    margin-bottom: 0px;
+    
+}
+
+#AK2, #ammo2
+{
+    
+    width: 55% !important;
+    height: 70% !important;
+    margin-right: 50px;
+    
+}
+
+.absec
+{
+    
+    margin-right: 125px !important;
+    
+}
+
+.margtop
+{
+    
+    margin-top: 50px;
     
 }
